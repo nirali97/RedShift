@@ -8,7 +8,6 @@ DB_PATH = "data/red_shift.db"
 
 # A mix of NIFTY50 companies + Case Studies from team reports
 COMPANIES = [
-    # Original NIFTY50 sample
     {"symbol": "ZEEL", "name": "Zee Entertainment", "ticker": "ZEEL.NS", "sector": "Media", "is_financial": 0},
     {"symbol": "RELIANCE", "name": "Reliance Industries", "ticker": "RELIANCE.NS", "sector": "Energy", "is_financial": 0},
     {"symbol": "TCS", "name": "Tata Consultancy Services", "ticker": "TCS.NS", "sector": "IT", "is_financial": 0},
@@ -17,14 +16,24 @@ COMPANIES = [
     {"symbol": "HINDUNILVR", "name": "Hindustan Unilever", "ticker": "HINDUNILVR.NS", "sector": "FMCG", "is_financial": 0},
     {"symbol": "BHARTIARTL", "name": "Bharti Airtel", "ticker": "BHARTIARTL.NS", "sector": "Telecom", "is_financial": 0},
     {"symbol": "LT", "name": "Larsen & Toubro", "ticker": "LT.NS", "sector": "Infrastructure", "is_financial": 0},
-    
-    # Financial companies (Will be skipped by ML due to FR-20)
     {"symbol": "HDFCBANK", "name": "HDFC Bank", "ticker": "HDFCBANK.NS", "sector": "Banking", "is_financial": 1},
     {"symbol": "SBIN", "name": "State Bank of India", "ticker": "SBIN.NS", "sector": "Banking", "is_financial": 1},
-    
-    # Added for Aaryahi's Case Study Report
     {"symbol": "YESBANK", "name": "Yes Bank", "ticker": "YESBANK.NS", "sector": "Banking", "is_financial": 1},
-    {"symbol": "ADANIENT", "name": "Adani Enterprises", "ticker": "ADANIENT.NS", "sector": "Conglomerate", "is_financial": 0}
+    {"symbol": "ADANIENT", "name": "Adani Enterprises", "ticker": "ADANIENT.NS", "sector": "Conglomerate", "is_financial": 0},
+    {"symbol": "TATAMOTORS", "name": "Tata Motors", "ticker": "TATAMOTORS.NS", "sector": "Auto", "is_financial": 0},
+    {"symbol": "WIPRO", "name": "Wipro", "ticker": "WIPRO.NS", "sector": "IT", "is_financial": 0},
+    {"symbol": "MARUTI", "name": "Maruti Suzuki", "ticker": "MARUTI.NS", "sector": "Auto", "is_financial": 0},
+    {"symbol": "ASIANPAINT", "name": "Asian Paints", "ticker": "ASIANPAINT.NS", "sector": "Materials", "is_financial": 0},
+    {"symbol": "SUNPHARMA", "name": "Sun Pharma", "ticker": "SUNPHARMA.NS", "sector": "Pharma", "is_financial": 0},
+    {"symbol": "TITAN", "name": "Titan", "ticker": "TITAN.NS", "sector": "Consumer", "is_financial": 0},
+    {"symbol": "HCLTECH", "name": "HCL Tech", "ticker": "HCLTECH.NS", "sector": "IT", "is_financial": 0},
+    {"symbol": "BAJAJ-AUTO", "name": "Bajaj Auto", "ticker": "BAJAJ-AUTO.NS", "sector": "Auto", "is_financial": 0},
+    {"symbol": "JSWSTEEL", "name": "JSW Steel", "ticker": "JSWSTEEL.NS", "sector": "Metals", "is_financial": 0},
+    {"symbol": "TATASTEEL", "name": "Tata Steel", "ticker": "TATASTEEL.NS", "sector": "Metals", "is_financial": 0},
+    {"symbol": "ULTRACEMCO", "name": "UltraTech", "ticker": "ULTRACEMCO.NS", "sector": "Materials", "is_financial": 0},
+    {"symbol": "NTPC", "name": "NTPC", "ticker": "NTPC.NS", "sector": "Utilities", "is_financial": 0},
+    {"symbol": "POWERGRID", "name": "Power Grid", "ticker": "POWERGRID.NS", "sector": "Utilities", "is_financial": 0},
+    {"symbol": "ONGC", "name": "ONGC", "ticker": "ONGC.NS", "sector": "Energy", "is_financial": 0}
 ]
 
 def find_value(statements, candidates, year):

@@ -1,14 +1,24 @@
-# Python virtual environment
+# Python virtual environments
 .venv/
+.venv_old/
 
 # Python cache
 __pycache__/
 .pytest_cache/
+*.pyc
+
+# Data files & Databases
+data/
+*.csv
+*.db
+*.sqlite
+
+# Machine Learning Models
+*.pkl
 
 # Secrets
 .env
 .streamlit/secrets.toml
 
-# Local data files
-data/*.db
-data/*.csv
+# OS generated files
+.DS_Store
